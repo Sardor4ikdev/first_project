@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="header" class="navbar-section">
+        <ul class="navbar">
+            <a href="#">
+                <li class="logo">Logo</li>
+            </a>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>About</li>
+            </a>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+            <a id="modal" onclick="openModal()" href="#popup">
+                <li>Sign In</li>
+            </a>
+        </ul>
+    </nav>
+    <div id="popup" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <a href="#header" class="popup__close">&times;</a>
+        <div class="popup__body">
+            <div class="popup__box">
+                <div class="popup__title">
+                    <h2>Регистрация</h2>
+                    <hr>
+                </div>
+                <form action="#header">
+                    <div>
+                        <label class="label" for="login">Логин</label>
+                        <input required class="input" id="login" placeholder="Введите логин" type="text">
+                    </div>
+                    <div>
+                        <label class="label" for="password">Пароль</label>
+                        <input required class="input" id="password" placeholder="Введите Пароль" type="password">
+                    </div>
+                    <div>
+                        <label class="label" for="password2">Повторите пароль</label>
+                        <input required class="input" id="password2" placeholder="Введите Пароль еще раз" type="password">
+                    </div>
+                    <div>
+                        <label class="label" for="email">Email</label>
+                        <input required class="input" id="email" placeholder="user@gmail.com" type="email">
+                    </div>
+                    <div>
+                        <label for="checkbox">Запомнить меня</label>
+                        <input required class="checkbox" type="checkbox" name="" id="">
+                    </div>
+                    <button>Регистрация</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
